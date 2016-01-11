@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: f(x) Login Notification\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-10 20:50+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
+"Language-Team: David Chandra P <david@shellcreeper.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__;_x;"
+"_n;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/dashboard-widget.php:69
+msgid "Your Account"
+msgstr ""
+
+#: includes/dashboard-widget.php:108 includes/dashboard-widget.php:207
+msgid "Login Name:"
+msgstr ""
+
+#: includes/dashboard-widget.php:111
+msgid "Name:"
+msgstr ""
+
+#: includes/dashboard-widget.php:114
+msgid "Email:"
+msgstr ""
+
+#: includes/dashboard-widget.php:117
+msgid "Edit Account"
+msgstr ""
+
+#: includes/dashboard-widget.php:149
+msgid "Your email input is not valid. Please try again."
+msgstr ""
+
+#: includes/dashboard-widget.php:159
+msgid "Your email input already used by another user. Please try again."
+msgstr ""
+
+#: includes/dashboard-widget.php:164
+msgid "Your email is updated."
+msgstr ""
+
+#: includes/dashboard-widget.php:174
+msgid "Your name is updated."
+msgstr ""
+
+#: includes/dashboard-widget.php:187
+msgid "Your Password is updated."
+msgstr ""
+
+#: includes/dashboard-widget.php:192
+msgid "Your password input do not match. Please try again."
+msgstr ""
+
+#: includes/dashboard-widget.php:210
+msgid "Edit Name:"
+msgstr ""
+
+#: includes/dashboard-widget.php:213
+msgid "Edit Email:"
+msgstr ""
+
+#: includes/dashboard-widget.php:220
+msgid "New Password:"
+msgstr ""
+
+#: includes/dashboard-widget.php:223
+msgid "Generate Password"
+msgstr ""
+
+#: includes/dashboard-widget.php:228
+msgid "Hide password"
+msgstr ""
+
+#: includes/dashboard-widget.php:230
+msgid "Hide"
+msgstr ""
+
+#: includes/dashboard-widget.php:232
+msgid "Cancel password change"
+msgstr ""
+
+#: includes/dashboard-widget.php:233
+msgid "Cancel"
+msgstr ""
+
+#: includes/dashboard-widget.php:240
+msgid "Repeat New Password"
+msgstr ""
+
+#: includes/dashboard-widget.php:243
+msgid "Type your new password again."
+msgstr ""
+
+#: includes/dashboard-widget.php:247
+msgid "Confirm Password"
+msgstr ""
+
+#: includes/dashboard-widget.php:251
+msgid "Confirm use of weak password"
+msgstr ""
