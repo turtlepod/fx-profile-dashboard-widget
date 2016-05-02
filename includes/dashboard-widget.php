@@ -31,9 +31,17 @@ class fx_Profile_Dashboard_Widget{
 	 */
 	public function admin_enqueue_scripts(){
 
-		/* Get user data and current page context */
-		global $pagenow, $current_user;
-		get_currentuserinfo();
+		/* Get current page context */
+		global $pagenow;
+
+		/* Get current user data  */
+		if( function_exists( 'wp_get_current_user' ) ){
+			$current_user = wp_get_current_user();
+		}
+		else{
+			global $current_user;
+			get_currentuserinfo();
+		}
 
 		/* Only load script when editing this dashboard widget & check user caps */
 		if( 'index.php' == $pagenow ){
@@ -58,9 +66,14 @@ class fx_Profile_Dashboard_Widget{
 	 */
 	public function setup(){
 
-		/* Get user data */
-		global $current_user;
-		get_currentuserinfo();
+		/* Get current user data */
+		if( function_exists( 'wp_get_current_user' ) ){
+			$current_user = wp_get_current_user();
+		}
+		else{
+			global $current_user;
+			get_currentuserinfo();
+		}
 
 		/* Check capability */
 		if( current_user_can( $this->capability ) && current_user_can( 'edit_user', $current_user->ID ) ){
@@ -79,9 +92,14 @@ class fx_Profile_Dashboard_Widget{
 		/* Edit Widget URL */
 		$edit_url = 'index.php?edit=fx_profile_dashboard_widget#fx_profile_dashboard_widget';
 
-		/* Get user data */
-		global $current_user;
-		get_currentuserinfo();
+		/* Get current user data  */
+		if( function_exists( 'wp_get_current_user' ) ){
+			$current_user = wp_get_current_user();
+		}
+		else{
+			global $current_user;
+			get_currentuserinfo();
+		}
 
 		/* Get notice */
 		$notice = get_transient( 'fx_profile_dashboard_widget_notice' );
@@ -125,9 +143,14 @@ class fx_Profile_Dashboard_Widget{
 	 */
 	public function dashboard_widget_control_callback(){
 
-		/* get user data */
-		global $current_user;
-		get_currentuserinfo();
+		/* Get current user data  */
+		if( function_exists( 'wp_get_current_user' ) ){
+			$current_user = wp_get_current_user();
+		}
+		else{
+			global $current_user;
+			get_currentuserinfo();
+		}
 
 		/* Notice */
 		$email_notice = '';

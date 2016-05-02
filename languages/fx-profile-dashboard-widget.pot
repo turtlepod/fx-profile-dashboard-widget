@@ -1,8 +1,9 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: f(x) Login Notification\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-10 20:50+0700\n"
+"POT-Creation-Date: 2016-05-02 15:25+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: David Chandra P <david@shellcreeper.com>\n"
@@ -13,97 +14,101 @@ msgstr ""
 "X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__;_x;"
 "_n;_x:1,2c;_n:1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/dashboard-widget.php:69
+#: fx-profile-dashboard-widget.php:88
+msgid "Get Support"
+msgstr ""
+
+#: includes/dashboard-widget.php:82
 msgid "Your Account"
 msgstr ""
 
-#: includes/dashboard-widget.php:108 includes/dashboard-widget.php:207
+#: includes/dashboard-widget.php:126 includes/dashboard-widget.php:230
 msgid "Login Name:"
 msgstr ""
 
-#: includes/dashboard-widget.php:111
+#: includes/dashboard-widget.php:129
 msgid "Name:"
 msgstr ""
 
-#: includes/dashboard-widget.php:114
+#: includes/dashboard-widget.php:132
 msgid "Email:"
 msgstr ""
 
-#: includes/dashboard-widget.php:117
+#: includes/dashboard-widget.php:135
 msgid "Edit Account"
 msgstr ""
 
-#: includes/dashboard-widget.php:149
+#: includes/dashboard-widget.php:172
 msgid "Your email input is not valid. Please try again."
 msgstr ""
 
-#: includes/dashboard-widget.php:159
+#: includes/dashboard-widget.php:182
 msgid "Your email input already used by another user. Please try again."
 msgstr ""
 
-#: includes/dashboard-widget.php:164
+#: includes/dashboard-widget.php:187
 msgid "Your email is updated."
 msgstr ""
 
-#: includes/dashboard-widget.php:174
+#: includes/dashboard-widget.php:197
 msgid "Your name is updated."
 msgstr ""
 
-#: includes/dashboard-widget.php:187
+#: includes/dashboard-widget.php:210
 msgid "Your Password is updated."
 msgstr ""
 
-#: includes/dashboard-widget.php:192
+#: includes/dashboard-widget.php:215
 msgid "Your password input do not match. Please try again."
 msgstr ""
 
-#: includes/dashboard-widget.php:210
+#: includes/dashboard-widget.php:233
 msgid "Edit Name:"
 msgstr ""
 
-#: includes/dashboard-widget.php:213
+#: includes/dashboard-widget.php:236
 msgid "Edit Email:"
 msgstr ""
 
-#: includes/dashboard-widget.php:220
+#: includes/dashboard-widget.php:243
 msgid "New Password:"
 msgstr ""
 
-#: includes/dashboard-widget.php:223
+#: includes/dashboard-widget.php:246
 msgid "Generate Password"
 msgstr ""
 
-#: includes/dashboard-widget.php:228
+#: includes/dashboard-widget.php:251
 msgid "Hide password"
 msgstr ""
 
-#: includes/dashboard-widget.php:230
+#: includes/dashboard-widget.php:253
 msgid "Hide"
 msgstr ""
 
-#: includes/dashboard-widget.php:232
+#: includes/dashboard-widget.php:255
 msgid "Cancel password change"
 msgstr ""
 
-#: includes/dashboard-widget.php:233
+#: includes/dashboard-widget.php:256
 msgid "Cancel"
 msgstr ""
 
-#: includes/dashboard-widget.php:240
+#: includes/dashboard-widget.php:263
 msgid "Repeat New Password"
 msgstr ""
 
-#: includes/dashboard-widget.php:243
+#: includes/dashboard-widget.php:266
 msgid "Type your new password again."
 msgstr ""
 
-#: includes/dashboard-widget.php:247
+#: includes/dashboard-widget.php:270
 msgid "Confirm Password"
 msgstr ""
 
-#: includes/dashboard-widget.php:251
+#: includes/dashboard-widget.php:274
 msgid "Confirm use of weak password"
 msgstr ""

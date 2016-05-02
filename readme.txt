@@ -3,8 +3,8 @@ Contributors: turtlepod
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TT23LVNKA3AU2
 Tags: dashboard widget, profile, user
 Requires at least: 4.3
-Tested up to: 4.4
-Stable tag: 1.0.0
+Tested up to: 4.5
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Admin dashboard widget to edit profile.
 
 == Description ==
 
-**[f(x) Profile Dashboard Widget](http://genbu.me/plugins/fx-profile-dashboard-widget/)** add a Dashboard Widget to edit user profile.
+**[f(x) Profile Dashboard Widget](http://genbumedia.com/plugins/fx-profile-dashboard-widget/)** add a Dashboard Widget to edit user profile.
 
 Sometimes admin user profile has too many option, such as visual editor, admin bar, admin color scheme, etc. And it's too confusing to user. With this plugin user can edit profile page easily directly in dashboard admin screen.
 
@@ -22,7 +22,7 @@ Sometimes admin user profile has too many option, such as visual editor, admin b
 1. Can change "Name", "Email", and "Password".
 1. Change password with strength meter.
 1. The GPL v2.0 or later license. :) Use it to make something cool.
-1. Support available at [Genbu Media](https://genbu.me/contact-us/).
+1. Support available at [Genbu Media](https://genbumedia.com/contact/?about=f(x)+Profile+Dashboard+Widget).
 
 
 == Installation ==
@@ -56,10 +56,18 @@ To make this feature simpler we decide to only use a single "Name" input. This n
 
 == Changelog ==
 
+= 1.1.0 - 02 May 2016 =
+* WordPress 4.5 Compat: change get_currentuser() with wp_get_current_user()
+* Fix plugin header.
+* Plugin action link to get support.
+
 = 1.0.0 - 10 Jan 2015 =
 * Init
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+WordPress 4.5 compatibility.
 
 = 1.0.0 =
 initial relase.
