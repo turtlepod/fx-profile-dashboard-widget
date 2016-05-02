@@ -1,20 +1,16 @@
 <?php
 /**
  * Plugin Name: f(x) Profile Dashboard Widget
- * Plugin URI: http://genbu.me/plugins/fx-profile-dashboard-widget/
+ * Plugin URI: http://genbumedia.com/plugins/fx-profile-dashboard-widget/
  * Description: Admin dashboard widget to edit profile.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: David Chandra Purnama
  * Author URI: http://shellcreeper.com/
+ * License: GPLv2 or later
+ * Text Domain: fx-profile-dashboard-widget
+ * Domain Path: /languages/
  *
- * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
- * General Public License version 2, as published by the Free Software Foundation.  You may NOT assume 
- * that you can use any other version of the GPL.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
- * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- *
- * @author David Chandra Purnama <david@genbu.me>
+ * @author David Chandra Purnama <david@genbumedia.com>
  * @copyright Copyright (c) 2016, Genbu Media
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 **/
@@ -26,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) { die; }
 ------------------------------------------ */
 
 /* Set plugin version constant. */
-define( 'FX_PDW_VERSION', '1.0.0' );
+define( 'FX_PDW_VERSION', '1.1.0' );
 
 /* Set constant path to the plugin directory. */
 define( 'FX_PDW_PATH', trailingslashit( plugin_dir_path(__FILE__) ) );
@@ -55,4 +51,42 @@ function fx_pdw_plugins_loaded(){
 		require_once( FX_PDW_PATH . 'includes/dashboard-widget.php' );
 		$fx_profile_dashboard_widget = new fx_Profile_Dashboard_Widget();
 	}
+
+	/* Plugin Action Link */
+	add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'fx_pdw_plugin_action_links' );
+
+
 }
+
+/**
+ * Add Action Link For Support
+ * @since 1.1.0
+ */
+function fx_pdw_plugin_action_links ( $links ){
+
+	/* Get current user info */
+	if( function_exists( 'wp_get_current_user' ) ){
+		$current_user = wp_get_current_user();
+	}
+	else{
+		global $current_user;
+		get_currentuserinfo();
+	}
+
+	/* Build support url */
+	$support_url = add_query_arg(
+		array(
+			'about'      => urlencode( 'f(x) Profile Dashboard Widget (v.' . FX_PDW_VERSION . ')' ),
+			'sp_name'    => urlencode( $current_user->display_name ),
+			'sp_email'   => urlencode( $current_user->user_email ),
+			'sp_website' => urlencode( home_url() ),
+		),
+		'http://genbumedia.com/contact/'
+	);
+
+	/* Add support link */
+	$links[] = '<a href="' . esc_url( $support_url ) . '">' . __( 'Get Support', 'fx-profile-dashboard-widget' ) . '</a>';
+	return $links;
+}
+
+
