@@ -85,7 +85,7 @@ function fx_pdw_plugin_action_links ( $links ){
 	);
 
 	/* Add support link */
-	$links[] = '<a href="' . esc_url( $support_url ) . '">' . __( 'Get Support', 'fx-profile-dashboard-widget' ) . '</a>';
+	$links[] = '<a target="_blank" href="' . esc_url( $support_url ) . '">' . __( 'Get Support', 'fx-profile-dashboard-widget' ) . '</a>';
 	return $links;
 }
 
