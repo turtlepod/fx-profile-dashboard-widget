@@ -3,7 +3,7 @@
  * Plugin Name: f(x) Profile Dashboard Widget
  * Plugin URI: http://genbumedia.com/plugins/fx-profile-dashboard-widget/
  * Description: Admin dashboard widget to edit profile.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: David Chandra Purnama
  * Author URI: http://shellcreeper.com/
  * License: GPLv2 or later
@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) { die; }
 ------------------------------------------ */
 
 /* Set plugin version constant. */
-define( 'FX_PDW_VERSION', '1.1.0' );
+define( 'FX_PDW_VERSION', '1.1.1' );
 
 /* Set constant path to the plugin directory. */
 define( 'FX_PDW_PATH', trailingslashit( plugin_dir_path(__FILE__) ) );

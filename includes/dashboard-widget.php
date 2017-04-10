@@ -270,7 +270,7 @@ class fx_Profile_Dashboard_Widget{
 			<th><?php _e( 'Confirm Password' ); ?></th>
 			<td>
 				<label>
-					<input type="checkbox" name="pw_weak" class="pw-checkbox" />
+					<input autocomplete="off" type="checkbox" name="pw_weak" class="pw-checkbox" />
 					<?php _e( 'Confirm use of weak password' ); ?>
 				</label>
 			</td>
@@ -278,7 +278,7 @@ class fx_Profile_Dashboard_Widget{
 		</table>
 		<script type="text/javascript">
 			jQuery( document ).ready( function($) {
-				$( "#fx_profile_dashboard_widget #submit" ).attr( 'value', 'Update Profile' );
+				$( "#fx_profile_dashboard_widget #submit" ).attr( 'value', '<?php _e( 'Update Profile', 'fx-profile-dashboard-widget' ); ?>' );
 			});
 		</script>
 

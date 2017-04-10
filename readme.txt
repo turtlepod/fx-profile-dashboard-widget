@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: dashboard widget, profile, user
 Requires at least: 4.3
 Tested up to: 4.7
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,6 +55,9 @@ To make this feature simpler we decide to only use a single "Name" input. This n
 3. Edit Profile Save Notification
 
 == Changelog ==
+
+= 1.1.1 - 10 April 2017 =
+* Make "Update Profile" Button translatable.
 
 = 1.1.0 - 02 May 2016 =
 * WordPress 4.5 Compat: change get_currentuser() with wp_get_current_user()
